@@ -28,13 +28,7 @@ eureka:
     client:
       serviceUrl:
         defaultZone: http://localhost:8761/eureka/
-customProperty:
-    test: sravya  
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
+
             
     
         
