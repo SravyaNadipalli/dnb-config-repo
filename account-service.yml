@@ -34,4 +34,4 @@ management:
       exposure:
         include: refresh
 customProperty:
-  test: ThorRagnarok
+  test: Thor
