@@ -16,7 +16,7 @@ spring:
     serialization:
       fail-on-empty-beans: false
   application:
-    name: accountService    
+    name: account-service    
 server:
   port: 9000 
   error:
