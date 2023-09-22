@@ -2,7 +2,7 @@ spring:
   datasource:
     username: root
     password: root
-    url: jdbc:mysql://localhost:3306/dnbacc
+    url: jdbc:mysql://localhost:3306/dnb5
     hikari:
       auto-commit: true
   jpa:
@@ -15,6 +15,8 @@ spring:
   jackson:
     serialization:
       fail-on-empty-beans: false
+  application:
+    name: accountService    
 server:
   port: 9000 
   error:
