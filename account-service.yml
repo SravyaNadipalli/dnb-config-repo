@@ -25,17 +25,18 @@ server:
     include-message: always
 eureka:
   instance:
-    client:
-      serviceUrl:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    serviceUrl:
         defaultZone: http://localhost:8761/eureka/ 
 customProperty:
     test: sravya 
-    
 management:
   endpoints:
     web:
       exposure:
-        include: refresh    
+        include: refresh            
+           
     
 
 
