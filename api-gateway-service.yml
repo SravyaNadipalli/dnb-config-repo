@@ -5,7 +5,7 @@ spring:
       - id: ORDER-SERVICE
         uri: lb://ORDER-SERVICE
         predicates:
-        - Path=/api/order/**
+        - Path=/order/**
       - id: ORDER-SERVICE
         uri: lb://ORDER-SERVICE
         predicates:
