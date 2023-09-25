@@ -8,7 +8,7 @@ spring:
 
       password: root
 
-      url: jdbc:mysql://localhost:3306/dnbcus
+      url: jdbc:mysql://localhost:3306/dnbacc
 
   jpa:
 
