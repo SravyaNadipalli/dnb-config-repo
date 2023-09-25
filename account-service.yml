@@ -63,3 +63,5 @@ management:
       exposure:
 
         include: refresh, health
+api:
+    customer: http://CUSTOMER-SERVICE/api        
