@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: API-GATEWAY-SERVICE
+  config:
+    import: configserver:http://localhost:8888
+  cloud:
+    gateway:
+      routes:
+      - id: ORDER-SERVICE
+        uri: lb://ORDER-SERVICE
+        predicates:
+        - Path=/api/order/**
+      - id: ORDER-SERVICE
+        uri: lb://ORDER-SERVICE
+        predicates:
+        - Path=/api/order/**         
+server:
+  port: 9191
+    
+
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: refresh,*
+        
+   
