@@ -16,6 +16,6 @@ management:
   endpoints:
     jmx:
       exposure:
-        include: refresh,*
+        include: "*"
         
    
