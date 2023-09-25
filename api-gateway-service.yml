@@ -2,7 +2,7 @@ spring:
   application:
     name: API-GATEWAY-SERVICE
   config:
-    import: Cconfigserver:http://localhost:8888
+    import: configserver:http://localhost:8888
   cloud:
     gateway:
       routes:
@@ -16,8 +16,6 @@ spring:
         - Path=/api/order/**         
 server:
   port: 9191
-    
-
 management:
   endpoints:
     jmx:
