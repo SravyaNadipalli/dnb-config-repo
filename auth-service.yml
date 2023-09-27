@@ -11,7 +11,7 @@ spring:
     hibernate:
       ddl-auto: update
   application:
-    name: AUTH-SERVICE
+    name: auth-service
 eureka:
   instance:
     client:
